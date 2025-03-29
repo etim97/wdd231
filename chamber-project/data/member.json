@@ -1,0 +1,59 @@
+[
+    {
+      "name": "John Doe",
+      "address": "123 Main St, Lagos, Nigeria",
+      "phone": "+2349123456789",
+      "website": "https://johndoe.com",
+      "image": "john.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Jane Smith",
+      "address": "456 Elm St, Abuja, Nigeria",
+      "phone": "+2349087654321",
+      "website": "https://janesmith.com",
+      "image": "jane.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Henry Okokon",
+      "address": "789 Oak St, Port Harcourt, Nigeria",
+      "phone": "+2349071234567",
+      "website": "https://henryokonkon.com",
+      "image": "michael.jpg",
+      "membership": "Platinum"
+    },
+    {
+      "name": "Tina Samuel",
+      "address": "101 Pine St, Kano, Nigeria",
+      "phone": "+2349165432109",
+      "website": "https://Tinasamuel.com",
+      "image": "sarah.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "David Brown",
+      "address": "202 Maple St, Enugu, Nigeria",
+      "phone": "+2349156789012",
+      "website": "https://davidbrown.com",
+      "image": "david.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "Gabriel Ezeka",
+      "address": "303 Cedar St, Ibadan, Nigeria",
+      "phone": "+2349145678901",
+      "website": "https://Gabrielezeka.com",
+      "image": "emma.jpg",
+      "membership": "Bronze"
+    },
+    {
+      "name": "James Anderson",
+      "address": "404 Birch St, Uyo, Nigeria",
+      "phone": "+2349134567890",
+      "website": "https://jamesanderson.com",
+      "image": "james.jpg",
+      "membership": "Platinum"
+    }
+  ]
+  

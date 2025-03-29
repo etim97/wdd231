@@ -1,0 +1,412 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #0056A4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    justify-content: center;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.7);
+    
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    gap: 20px;
+   
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    list-style-type: none;
+    padding: 10px  15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.grid-container {
+    display: grid;
+    flex: 3;
+    grid-template-columns:1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.business-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 40px; /* Spacing between cards */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Business Card */
+.business-card {
+    background: white;
+    border-left: 5px solid #FFD700;
+    padding: 15px;
+    border-radius: 5px;
+    border: #0056A4 solid;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #c5c1c1;
+    border-radius: 50%;
+}
+
+.card-large{
+    text-align: center;
+    background: white;
+    color:rgb(17, 17, 17);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+   
+}
+
+.card-large p {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid #007BFF; /* Blue highlight */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-large p strong {
+    color: #007BFF;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+h3{
+    color:white
+    
+}
+/* Weather Section */
+.current-weather {
+    text-align: center;
+    background: white;
+    color: rgb(17, 17, 17);
+    padding: 20px;
+    border-radius: 8px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a card effect */
+    max-width: 300px; /* Controls width */
+    margin: 20px auto; /* Centers the card */
+    text-align: center;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weather-info img {
+    width: 40px;
+}
+
+/* Controls (Grid/List Toggle) */
+.controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Grid View */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* List View */
+.list {
+    display: block;
+}
+
+.list .member-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list .member-card img {
+    width: 80px; /* Adjust size */
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+button {
+    background-color: #FFD700;
+    color: #0056A4;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #FFC107;
+}
+
+/* Footer */
+footer {
+    background-color: #0056A4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%; 
+    border: 2px solid #fff; 
+}
+
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+    border-color: #f1c40f; 
+}
+
+
+
+
+/* 🍔 Mobile Navigation */
+nav {
+    background-color: #0c0c0c;
+    padding: 10px;
+    text-align: center;
+    gap: 20px;
+    transition: 0.3s;
+}
+
+nav.open { /* Now matches JavaScript */
+    display: block;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #0056A4;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 60px;
+    }
+
+    nav.open ul { /* Now matches JavaScript */
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        text-align: center;
+    }
+}
+
+/*  Grid & List Toggle */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.list {
+    display: block;
+}
+
+.list .member-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list .member-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* 🎨 Member Card Styling */
+.member-card {
+    background: white;
+    border-left: 5px solid #FFD700;
+    padding: 15px;
+    border-radius: 5px;
+    border: #0056A4 solid;
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Membership Colors */
+.member { background: #f0f0f0; }
+.silver { background: silver; }
+.gold { background: gold; }
+
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .business-card {
+        text-align: center;
+    }
+
+    .card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .weather-info {
+        flex-direction: column;
+    }
+
+    .weather-info img {
+        width: 60px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

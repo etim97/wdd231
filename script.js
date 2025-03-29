@@ -1,7 +1,7 @@
 // Select the menu toggle input, menu icon, and navigation menu
 const menuToggle = document.getElementById('menu-toggle');
 const menuIcon = document.querySelector('.menu-icon');
-const navMenu = document.querySelector('nav ul');
+const navMenu = document.querySelector(".nav-menu");
 
 
 menuIcon.addEventListener('click', () => {
