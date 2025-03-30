@@ -1,0 +1,225 @@
+/* 🌟 General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+/* 🌟 Header */
+header {
+    background-color:  #0056A4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* 🌟 Navbar */
+nav {
+    background: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 10px 15px;
+}
+
+.nav-links a {
+    color: #0056A4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* 🌟 Hamburger Menu */
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    justify-content: center;
+}
+
+main{ max-width: 1000px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+footer {
+    background-color: #0056A4;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%; 
+    border: 2px solid #fff; 
+}
+
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+    border-color: #f1c40f; 
+}
+
+/* 🌟 Grid/List Toggle */
+.controls {
+    text-align: center;
+    margin: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #f39c12;
+}
+
+/* 🌟 Member Grid/List */
+#members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.member-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 🌟 List View */
+.list .member-card {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.list .member-card img {
+    margin-right: 20px;
+}
+
+/* 🌟 Membership Levels */
+.gold {
+    border: 3px solid gold;
+}
+
+.silver {
+    border: 3px solid silver;
+}
+
+.member {
+    border: 2px solid gray;
+}
+
+/* Hide menu by default on mobile */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        color: #0056A4;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        text-align: right;
+    }
+}

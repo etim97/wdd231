@@ -10,7 +10,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
-    color: #333;
     margin: 0;
     padding: 0;
 }
@@ -54,38 +53,46 @@ h1 {
     
 }
 
-/* Navigation */
 nav {
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    gap: 20px;
-   
-}
-
-nav ul {
+    background: white;
+    padding: 10px 0;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    list-style-type: none;
-    padding: 10px  15px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid black;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
 }
 
-nav ul li a {
-    color: white;
+.nav-links li {
+    padding: 10px 15px;
+}
+
+.nav-links a {
+    color: #0056A4;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem;
 }
 
-nav ul li a:hover {
-    color: #FFD700;
+.nav-links a:hover {
+    color: #f39c12;
+}
 
+/* 🌟 Hamburger Menu */
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    color: white;
+}
+
+#menu-toggle {
+    display: none;
 }
 
 .hero img {
@@ -310,27 +317,30 @@ nav.open { /* Now matches JavaScript */
     display: none;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
+/* Hide menu by default on mobile */
+@media screen and (max-width: 768px) {
+    nav {
         flex-direction: column;
-        background-color: #0056A4;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 60px;
+        text-align: center;
     }
 
-    nav.open ul { /* Now matches JavaScript */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        color: #0056A4;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .nav-links.open {
         display: flex;
     }
 
     .menu-icon {
         display: block;
-        text-align: center;
+        text-align: right;
     }
 }
-
 /*  Grid & List Toggle */
 .grid {
     display: grid;

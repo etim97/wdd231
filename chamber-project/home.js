@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-    fetchMembers(); // Fetch members when the page loads
+
 
     document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.getElementById("menu-toggle");
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error("Error: Grid/List buttons or members container not found!");
     }
-});
 
 // 📥 Fetch and display members
 async function fetchMembers() {
