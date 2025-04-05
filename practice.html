@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Test</title>
+  <style>
+    @keyframes pop-in {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .card {
+      width: 200px;
+      height: 100px;
+      background: #fff;
+      border: 1px solid #ccc;
+      text-align: center;
+      margin: 20px;
+      animation: pop-in 1s ease-in-out forwards;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">Test Card</div>
+</body>
+</html>

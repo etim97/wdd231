@@ -1,65 +1,33 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap');
-
+/* 🌟 General Styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
 }
 
-/* Header */
+/* 🌟 Header */
 header {
-    background-color: #0056A4;
+    background-color:  #0056A4;
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo img {
-    width: 100px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.logo span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Merriweather', serif;
-    justify-content: center;
-}
-h1 {
     font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-}
-.hero{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    filter: brightness(0.7);
-    
 }
 
+/* 🌟 Navbar */
 nav {
     background: white;
     padding: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid black;
+    border-bottom: solid gold;
+    border-top: solid gold;
 }
 
 .nav-links {
@@ -76,6 +44,8 @@ nav {
     color: #0056A4;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem;
+    gap: 30px;
 }
 
 .nav-links a:hover {
@@ -95,167 +65,43 @@ nav {
     display: none;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    justify-content: center;
+}
+
+main{ max-width: 1000px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   border-radius: 8px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
 h2{
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-.grid-container {
-    display: grid;
-    flex: 3;
-    grid-template-columns:1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-.business-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Responsive columns */
-    gap: 40px; /* Spacing between cards */
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Business Card */
-.business-card {
-    background: white;
-    border-left: 5px solid #FFD700;
-    padding: 15px;
-    border-radius: 5px;
-    border: #0056A4 solid;
-}
-
-.card-content {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.image-placeholder {
-    width: 80px;
-    height: 80px;
-    background-color: #c5c1c1;
-    border-radius: 50%;
-}
-
-.card-large{
-    text-align: center;
-    background: white;
-    color:rgb(17, 17, 17);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
-   
-}
-
-.card-large p {
-    font-size: 1.1rem;
-    color: #333;
-    padding: 10px;
-    background: #f9f9f9;
-    border-left: 5px solid #007BFF; /* Blue highlight */
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card-large p strong {
-    color: #007BFF;
-    font-size: 1.2rem;
-    text-align: justify;
-}
-
-h3{
-    color:white
-    
-}
-/* Weather Section */
-.current-weather {
-    text-align: center;
-    background: white;
-    color: rgb(17, 17, 17);
-    padding: 20px;
-    border-radius: 8px;
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a card effect */
-    max-width: 300px; /* Controls width */
-    margin: 20px auto; /* Centers the card */
-    text-align: center;
-}
-
-.weather-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.weather-info img {
-    width: 40px;
-}
-
-/* Controls (Grid/List Toggle) */
-.controls {
-    text-align: center;
-    margin: 20px 0;
-}
-
-/* Grid View */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-/* List View */
-.list {
-    display: block;
-}
-
-.list .member-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.list .member-card img {
-    width: 80px; /* Adjust size */
-    height: 80px;
-    border-radius: 50%;
-}
-
-
-button {
-    background-color: #FFD700;
-    color: #0056A4;
-    font-weight: bold;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-button:hover {
-    background-color: #FFC107;
-}
-
-/* Footer */
 footer {
     background-color: #0056A4;
     color: white;
@@ -277,8 +123,8 @@ footer {
 }
 
 .social-icons img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 30%; 
     border: 2px solid #fff; 
 }
@@ -290,31 +136,92 @@ footer {
     border-color: #f1c40f; 
 }
 
+.contact-info p {
+    margin: 5px 0;
+}
 
+.contact-info a {
+    color: #f1c40f; /* Gold color for links */
+    text-decoration: none;
+}
 
-
-/* 🍔 Mobile Navigation */
-nav {
-    background-color: #0c0c0c;
-    padding: 10px;
+.contact-info a:hover {
+    text-decoration: underline;
+}
+/* 🌟 Grid/List Toggle */
+.controls {
     text-align: center;
-    gap: 20px;
-    transition: 0.3s;
+    margin: 20px;
 }
 
-nav.open { /* Now matches JavaScript */
-    display: block;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 2rem;
+.controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    border: none;
     cursor: pointer;
+    background-color: #2c3e50;
     color: white;
+    border-radius: 5px;
 }
 
-#menu-toggle {
-    display: none;
+.controls button:hover {
+    background-color: #f39c12;
+}
+
+/* 🌟 Member Grid/List */
+#members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.member-card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 🌟 List View */
+.list .member-card {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.list .member-card img {
+    margin-right: 20px;
+}
+
+/* 🌟 Membership Levels */
+.gold {
+    border: 3px solid gold;
+}
+
+.silver {
+    border: 3px solid silver;
+}
+
+.member {
+    border: 2px solid gray;
 }
 
 /* Hide menu by default on mobile */
@@ -340,83 +247,26 @@ nav.open { /* Now matches JavaScript */
         display: block;
         text-align: right;
     }
-}
-/*  Grid & List Toggle */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
 
-.list {
-    display: block;
-}
-
-.list .member-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.list .member-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-/* 🎨 Member Card Styling */
-.member-card {
-    background: white;
-    border-left: 5px solid #FFD700;
-    padding: 15px;
-    border-radius: 5px;
-    border: #0056A4 solid;
-}
-
-.member-card img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-/* Membership Colors */
-.member { background: #f0f0f0; }
-.silver { background: silver; }
-.gold { background: gold; }
-
-
-/* Mobile Responsive Adjustments */
-@media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
     }
-
-    .business-card {
-        text-align: center;
+    .events-weather-container {
+        flex-direction: column; 
     }
-
-    .card-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .controls {
-        flex-direction: column;
+    main {
+        grid-template-columns: 1fr;
     }
 
     .weather-info {
         flex-direction: column;
     }
-
-    .weather-info img {
-        width: 60px;
+    .hero {
+        height: 60vh;
     }
 
-    footer {
-        padding: 10px;
-        font-size: 14px;
+    .hero-content {
+        width: 90%;
     }
 }
+

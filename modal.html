@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="modal.css">
+<script src="modal.js"></script>
+</head>
+<body>
+    <!-- Course List (Example) -->
+<div class="courses">
+    <div class="course-card" data-title="Web Development" data-number="WDD 231"
+         data-credits="3" data-description="Learn to build modern websites."
+         data-certificate="Yes" data-stack="HTML, CSS, JS">
+        <h3>Web Development</h3>
+        <button class="view-details">View Details</button>
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<dialog id="course-modal">
+    <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <p><strong>Course Number:</strong> <span id="modal-number"></span></p>
+        <p><strong>Credits:</strong> <span id="modal-credits"></span></p>
+        <p><strong>Description:</strong> <span id="modal-description"></span></p>
+        <p><strong>Certificate:</strong> <span id="modal-certificate"></span></p>
+        <p><strong>Technology Stack:</strong> <span id="modal-stack"></span></p>
+        <button id="close-modal">Close</button>
+    </div>
+</dialog>
+
+    
+</body>
+</html>

@@ -1,139 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="WDD-231 Web front development 1 page directory for chamber of commerce site">
-<meta name="author" content="Wisdom Samuel Etim">
-<meta property="og:title" content="Chamber of Commerce">
-<meta property="og:description" content="Join Ensign Trade And Investment Chamber to connect with local businesses and grow your network.">
-<meta property="og:image" content="https://example.com/hero-image.jpg">
-<meta property="og:url" content="https://EticNig.com">
-<meta property="og:type" content="website">
-<title>chamber directory page</title>
-<link rel="stylesheet" href="directory.css">
-<script src="directory.js" defer></script>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD-231 Web front development 1 page directory for chamber of commerce site">
+    <meta name="author" content="Wisdom Samuel Etim">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:description" content="Join Ensign Trade And Investment Chamber to connect with local businesses and grow your network.">
+    <meta property="og:image" content="https://example.com/hero-image.jpg">
+    <meta property="og:url" content="https://EticNig.com">
+    <meta property="og:type" content="website">
+    <title>Chamber of Commerce Directory</title>
+
+    <link rel="stylesheet" href="directory.css">
+    <script src="home.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-      <header>
-         <div class="navbar">
-             <div class="logo">
-                 <img src="images/Untitled-2.jpg" alt="Chamber Logo">
-                 <span>Ensign Trade And Investment Chamber</span>
-             </div>
-             <input type="checkbox" id="menu-toggle">
-             <label for="menu-toggle" class="menu-icon">&#9776;</label>
-             </div>
-     </header>
-       <nav>
+
+    <!-- 🌟 Header & Navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/Untitled-2.jpg" alt="Chamber Logo">
+                <span>Ensign Trade And Investment Chamber</span>
+                <input type="checkbox" id="menu-toggle">
+              <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            </div>
+    </header>
+    <nav>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html">About</a></li>
-            <li><a href="join.html">Directory</a></li>
-            <li><a href="discovery.html">Contact</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discovery.html">discovery</a></li>
         </ul>
-        </nav>
-            <section class="hero">
-                <h2> Ensign Trade And Investment Chamber</h2>
-                <img src="" alt="Hero Image">
-            </section>
-        
-            <main class="grid-container">
-                <section class="card-large">
-                    <h2>Event</h2>
-                    <img src="image1.jpg" alt="Image 1">
-                       
-                    <p><strong>Networking Summit </strong> April 10, 2025 Speed networking, business showcase </p>
-                    <p><strong>Digital Marketing Masterclass</strong> April 25, 2025 SEO, social media, and content marketing </p>
-                    <p><strong>Entrepreneurship Bootcamp</strong> 1April 18, 2025Startup training, business model development  </p>
-                    <p><strong>Trade & Export Workshop</strong>May 12, 2025 Import/export strategies, trade policies </p> 
-                </section>
-        
-        <section class="current-weather">
-            <h2>Current Weather</h2>
-            <div class="weather-info">
-                <img src="partly-cloudy.png" alt="Partly Cloudy Icon">
-                <p><strong>75°F</strong></p>
-            </div>
-            <p>Partly Cloudy</p>
-            <p>High: 85°F</p>
-            <p>Low: 52°F</p>
-            <p>Humidity: 34%</p>
-            <p>Sunrise: 7:30am</p>
-            <p>Sunset: 9:59pm</p>
-        </section>
-        
-        <section class="business-container">
-        
-            <section class="business-card">
-                <h2>Business Name</h2>
-                <p class="tagline">Business Tag Line</p>
-                <div class="card-content">
-                    <div class="image-placeholder"></div>
-                    <div class="contact-info">
-                        <p><strong>EMAIL:</strong> EticNig@gmail.com</p>
-                        <p><strong>PHONE:</strong> +2349122589222</p>
-                        <p><strong>URL:</strong> EticNig.com</p>
-                    </div>
-                </div>
-            </section>
+    </nav>
+      <main>
+    <!-- 🌟 Hero Section -->
+    <section class="hero">
+        <h2>Ensign Trade And Investment Chamber</h2>
+        <img src="images/hero2.png" alt="Hero Image">
+    </section>
+      <!-- 🌟 Grid/List Toggle Controls -->
+    <section class="controls">
+        <button id="gridView">Grid View</button>
+        <button id="listView">List View</button>
+    </section>
     
-            <section class="business-card">
-                <h2>Business Name</h2>
-                <p class="tagline">Business Tag Line</p>
-                <div class="card-content">
-                    <div class="image-placeholder"></div>
-                    <div class="contact-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> +2349070576801</p>
-                        <p><strong>URL:</strong> EticNig.com</p>
-                    </div>
-                </div>
-            </section>
+    <section id="members" class="grid"></section>
+    </main>
+    <!--footer-->
+    <footer>
+        <p>© Ensign Trade And Investment Chamber| WDD 231 | Last Updated: <span id="lastUpdated"></span></p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="images/face_book.png" alt="images/face_book.png"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/icons8-x-logo-100.png" alt="Twitter"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkdin_313674-41288.jpg" alt="LinkedIn"></a>
+        </div>
+       <div class="contact-info">
+                    <p><strong>Contact Us:</strong></p>
+                    <p>Email: <a href="mailto:info@eticnig.com">info@eticnig.com</a></p>
+                    <p>Phone: <a href="tel:+2341234567890">+234 123 456 7890</a></p>
+                    <p>Address: 123 Allen Avenue, Ikeja Lagos, Nigeria</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("lastUpdated").innerText = document.lastModified;
+    </script>
+</body>
+</html>
     
-            <section class="business-card">
-                <h2>Business Name</h2>
-                <p class="tagline">Business Tag Line</p>
-                <div class="card-content">
-                    <div class="image-placeholder"></div>
-                    <div class="contact-info">
-                        <p><strong>EMAIL:</strong> EticNig@gmail.com</p>
-                        <p><strong>PHONE:</strong>+234912258922</p>
-                        <p><strong>URL:</strong> EticNig.com</p>
-                    </div>
-                </div>
-            </section>
-    
-        </section>
-    
-    
-                <section class="controls">
-                    <button id="gridView">Grid View</button>
-                    <button id="listView">List View</button>
-                </section>
-        
-                <section id="members" class="grid">
-                        <div class="member">John Doe</div>
-                        <div class="member">Henry Okokon</div>
-                        <div class="member">Gabriel Ezeka</div>
-                </section>
-            </main>
-        
-            <footer>
-                <p>© Ensign Trade And Investment Chamber| WDD 231 | Last Updated: <span id="lastUpdated"></span></p>
-                <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank"><img src="images/face_book.png" alt="images/face_book.png"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="images/icons8-x-logo-100.png" alt="Twitter"></a>
-                    <a href="https://linkedin.com" target="_blank"><img src="images/linkdin_313674-41288.jpg" alt="LinkedIn"></a>
-                </div>
-            </footer>
-        
-            <script>
-                document.getElementById("lastUpdated").innerText = document.lastModified;
-            </script>
-        
-    </body>
-    </html>
-        
-     
+  

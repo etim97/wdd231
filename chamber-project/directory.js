@@ -1,39 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetchMembers(); // Fetch members when the page loads
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.getElementById("menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
-        
-        menuToggle.addEventListener("change", function () {
-            if (this.checked) {
-                navLinks.classList.add("open");
-            } else {
-                navLinks.classList.remove("open");
-            }
-        });
-    });
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
     
-
-    //  Grid/List View Toggle
-    const gridViewBtn = document.getElementById("gridView");
-    const listViewBtn = document.getElementById("listView");
-    const membersContainer = document.getElementById("members");
-
-    if (gridViewBtn && listViewBtn && membersContainer) {
-        gridViewBtn.addEventListener("click", function () {
-            membersContainer.classList.add("grid");
-            membersContainer.classList.remove("list");
-        });
-
-        listViewBtn.addEventListener("click", function () {
-            membersContainer.classList.add("list");
-            membersContainer.classList.remove("grid");
-        });
-    } else {
-        console.error("Error: Grid/List buttons or members container not found!");
-    }
+    menuToggle.addEventListener("change", function () {
+        if (this.checked) {
+            navLinks.classList.add("open");
+        } else {
+            navLinks.classList.remove("open");
+        }
+    });
 });
+
+
+//  Grid/List View Toggle
+const gridViewBtn = document.getElementById("gridView");
+const listViewBtn = document.getElementById("listView");
+const membersContainer = document.getElementById("members");
+
+if (gridViewBtn && listViewBtn && membersContainer) {
+    gridViewBtn.addEventListener("click", function () {
+        membersContainer.classList.add("grid");
+        membersContainer.classList.remove("list");
+    });
+
+    listViewBtn.addEventListener("click", function () {
+        membersContainer.classList.add("list");
+        membersContainer.classList.remove("grid");
+    });
+} else {
+    console.error("Error: Grid/List buttons or members container not found!");
+}
 
 // 📥 Fetch and display members
 async function fetchMembers() {
