@@ -1,0 +1,9 @@
+/* Large screens */
+@media (min-width: 1025px) {
+    .cards-container {
+      grid-template-areas:
+        "card1 card2 card3 card4"
+        "card5 card6 card7 card8";
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

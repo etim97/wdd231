@@ -1,0 +1,15 @@
+/* Small screens */
+@media (max-width: 640px) {
+    .cards-container {
+      grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+      grid-template-columns: 1fr;
+    }
+  }
