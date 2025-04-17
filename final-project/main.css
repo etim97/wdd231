@@ -26,7 +26,7 @@ header {
 }
 
 .logo img {
-    width: 100px;
+    width: 70px;
     height: auto;
     margin-right: 10px;
 }
@@ -127,16 +127,11 @@ nav {
   border-radius: 5px;
 }
 .hero-content .btn:hover {
-  background-color: #fbf8be; /* Darker shade on hover */
+  background-color: #fbf8be;
   transform: scale(1.05);
 }
 
-  
-  
-    
-
-
-.services-preview {
+  .services-preview {
     padding: 60px 20px;
     background-color: #f4f4f4;
     text-align: center;
@@ -186,8 +181,8 @@ nav {
   h1{
     color:#234E70; 
     text-align: center;
-    margin-top: 20;
-    font-size: 1.5rem;
+    margin-top:  50px;
+    font-size: 2.5rem;
   }
   
   .service-image {

@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 // Fetch the JSON data from 'service.json'
 fetch('./data/services.json')
   .then(response => response.json())
@@ -46,6 +47,33 @@ function displayServices(services) {
     container.appendChild(serviceDiv);
   });
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Get form values
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const service = form.service.value;
+    const message = form.message.value.trim();
+    
+    if (!name || !email || !service || !message) {
+      alert('Please fill in all fields.');
+      return;
+    }
+
+    // Feedback (simulate submission)
+    alert('Thank you for reaching out! We’ll get back to you soon.');
+
+    // Optional: Reset form after submission
+    form.reset();
+  });
+});
 
 
  document.addEventListener("DOMContentLoaded", () => {
@@ -88,3 +116,29 @@ function displayServices(services) {
 
   updateTime();
   setInterval(updateTime, 1000); // Update every second
+
+  // Visit message using localStorage
+const visitMessage = document.getElementById("visitMessage");
+const lastVisit = localStorage.getItem("lastVisit");
+const now = new Date();
+
+if (lastVisit) {
+    const diffTime = now.getTime() - new Date(lastVisit).getTime();
+    const diffDays = Math.floor(diffTime / (1000 * 3600 * 24));
+    visitMessage.textContent = `Welcome back! It's been ${diffDays} day(s) since your last visit.`;
+} else {
+    visitMessage.textContent = "Welcome! This is your first visit.";
+}
+localStorage.setItem("lastVisit", now);
+
+// Modal dialog functionality
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const modalTitle = document.getElementById("modalTitle");
+const modalDescription = document.getElementById("modalDescription");
+const modalExtra = document.getElementById("modalExtra");
+const closeModal = document.getElementById("closeModal");
+
+closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+});

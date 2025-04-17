@@ -1,47 +1,48 @@
 [
     {
       "title": "Responsive Websites",
-      "description": "Mobile-first, responsive websites for all screen sizes."
+      "description": "Mobile-first, responsive websites for all screen sizes.",
+      "img": "images/filter-temple.png"
     },
     {
       "title": "E-Commerce Development",
       "description": "Custom online stores with secure payment integration.",
-      "img": "images/web2.jpg"
+      "img": "images/e com.png"
     },
     {
       "title": "Web App Solutions",
       "description": "Dynamic web applications using modern frameworks.",
-      "img": "images/web3.jpg"
+      "img": "images/coding 2.jpg"
     },
     {
       "title": "Logo & Branding",
       "description": "Unique logos and branding kits to boost your identity.",
-      "img": "images/graphic1.jpg"
+      "img": "images/Logo and brands.jpg"
     },
     {
       "title": "Marketing Materials",
       "description": "Flyers, brochures, posters and more for your business.",
-      "img": "images/graphic2.jpg"
+      "img": "images/graphics.jpg"
     },
     {
       "title": "Social Media Design",
       "description": "Attractive graphics optimized for Instagram, Facebook, and more.",
-      "img": "images/graphic3.jpg"
+      "img": "images/social media design.jpg"
     },
     {
       "title": "Wireframing",
       "description": "Low-fidelity wireframes to map user flows effectively.",
-      "img": "images/uiux1.jpg"
+      "img": "images/mid fidelity.jpg"
     },
     {
       "title": "Prototyping",
       "description": "Interactive mockups for user testing and approvals.",
-      "img": "images/uiux2.jpg"
+      "img": "images/prototype.jpg"
     },
     {
       "title": "UI/UX Redesign",
       "description": "Revamp existing interfaces to improve user experience.",
-      "img": "images/uiux3.jpg"
+      "img": "images/UIUX design.jpg"
     }
   ]
   
